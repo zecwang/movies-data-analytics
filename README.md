@@ -184,3 +184,19 @@ Two target userids: 1, 21732
 Movies both user 1 and user 21732 rated : [480, 355, 356, 292, 420, 231, 616, 520, 329, 586, 362, 588, 364, 589, 594, 466, 370, 185, 377, 122, 539, 316]
 ```
 
+## Simple Recommender System
+
+Predict the rating for a user on a specific item.
+
+Algorithm: **KNN with means**
+
+```
+# Input
+uid = str(196)  # raw user id
+iid = str(302)  # raw item id
+r_ui = 4  # already know the true rating is 4, so we can make a comparison
+
+# Output
+user: 196        item: 302        r_ui = 4.00   est = 4.06   {'actual_k': 27, 'was_impossible': False}
+```
+
